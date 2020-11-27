@@ -37,7 +37,7 @@ task runFeatures(type: Test) {
 
     options {
         jvmArgs = ['-Dcucumber.options= ' +
-                           '--glue org.umssdiplo.automationv01 ' +
+                           '--glue storeautomation.core' +
                            '--plugin pretty ' +
                            '--plugin json:build/cucumber/cucumber.json ' +
                            '--plugin rerun:build/cucumber/rerun.txt ']
